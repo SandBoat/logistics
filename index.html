@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>物流价格查询</title>
+    <!-- <link rel="stylesheet" type="text/css" href="bootstrap.min.css"> -->
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        font-size: 14px;
+    }
+
+    .table {
+        display: table;
+        margin: 150px auto;
+        text-align: center;
+        border-collapse: collapse;
+    }
+
+    .table .caption {
+        display: table-caption;
+        padding: 10px;
+        background-color: #5c6f24;
+        color: #fff;
+        font-size: 30px;
+    }
+
+    .table .tr {
+        display: table-row;
+    }
+
+    .table .tr .th,
+    .table .tr .td {
+        display: table-cell;
+        border: 1px solid #98bf21;
+    }
+
+    .table .tr .th {
+        padding: 20px 80px;
+        background-color: #A7C942;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .table .tr .td {
+        padding: 20px 0;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="table">
+            <div class="caption">香啡园-安能物流价格查询表</div>
+            <div class="tr">
+                <div class="th">省</div>
+                <div class="th">市</div>
+                <div class="th">县/区</div>
+                <div class="th">价格</div>
+            </div>
+            <div class="tr">
+                <div class="td">
+                    <select id="province" name="province">
+                        <option>选择省</option>
+                    </select>
+                </div>
+                <div class="td">
+                    <select id="city" name="province">
+                        <option>选择市</option>
+                    </select>
+                </div>
+                <div class="td">
+                    <select id="county" name="province">
+                        <option>选择县</option>
+                    </select>
+                </div>
+                <div class="td">
+                    <div id="price">
+                        价格
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="data/p_c.js"></script>
+    <script type="text/javascript" src="data/c_c.js"></script>
+    <script type="text/javascript" src="data/c_p.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
