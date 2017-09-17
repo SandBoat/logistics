@@ -51,8 +51,10 @@ var controllers = {
     getPrice: function() {
         if (model.nowCounty) {
             model.nowPrice = model.c_p[model.nowCounty];
-        } else {
+        } else if (model.nowCity) {
             model.nowPrice = model.c_p[model.nowCity];
+        } else {
+            model.nowPrice = "价格";
         }
         return model.nowPrice;
     },
