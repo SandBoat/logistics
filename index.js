@@ -61,10 +61,15 @@ var controllers = {
 
     setNowProvince: function(province) {
         model.nowProvince = province;
+        model.nowCity = '';
+        model.nowCounty = '';
         cityView.render();
+        countyView.render();
+        priceView.render();
     },
     setNowCity: function(city) {
         model.nowCity = city;
+        model.nowCounty = '';
         countyView.render();
         priceView.render();
     },
